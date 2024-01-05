@@ -14,9 +14,9 @@ cp dev_Dockerfile ./$APP_NAME/Dockerfile
 sed -i "s/ng serve/ng serve --host 0.0.0.0  --poll 500/g" ./$APP_NAME/package.json
 
 # Remove all files
-rm -rd .git
-rm create-app.sh
+rm -rdf .git
 rm create.Dockerfile
 rm dev_docker-compose.yml
 rm dev_Dockerfile
 rm README.md
+rm create-app.sh
