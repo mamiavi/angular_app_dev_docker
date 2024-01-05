@@ -2,7 +2,7 @@ version: "3"
 services:
   app:
     environment:
-      - COMPOSE_PROJECT_NAME=mapa-sectores
+      - COMPOSE_PROJECT_NAME=%%%%
     build: .
     ports:
       - "4200:4200"

@@ -12,5 +12,6 @@ sed -i "s/%%%%/$APP_NAME/g" dev_docker-compose.yml
 cp dev_docker-compose.yml ./$APP_NAME/docker-compose.yml
 cp dev_Dockerfile ./$APP_NAME/Dockerfile
 sed -i "s/ng serve/ng serve --host 0.0.0.0  --poll 500/g" ./$APP_NAME/package.json
-# rm Dockerfile
-# rm docker-compose.yml
+
+# Remove all files
+find . -type f -delete
